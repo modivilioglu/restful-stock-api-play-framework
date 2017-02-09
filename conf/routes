@@ -1,0 +1,9 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+GET     /categories                 controllers.ProductController.getCategories
+GET     /product/category/:category controllers.ProductController.getProductNamesPerCategory(category)
+GET     /product/:name              controllers.ProductController.getProduct(name)
+POST    /product                    controllers.ProductController.addProduct
+
